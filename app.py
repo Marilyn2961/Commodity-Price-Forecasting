@@ -112,6 +112,34 @@ def trade_suggestion(pred, a1, a2, avg_r2, threshold=0.6, min_conf=0.6):
     else:
         return f"📉 Spread expected to NARROW → Consider SHORT {a1}, LONG {a2}"
 
+# ----------------- TRADING STRATEGY GUIDE -----------------
+def trading_strategy_guide():
+    st.sidebar.markdown("---")
+    st.sidebar.subheader("📈 Trading Strategy Guide")
+    
+    st.sidebar.markdown("""
+    **Strategy Rules:**
+    
+    ✅ **ENTER LONG Spread** when:
+    - Predicted change > +0.6
+    - Confidence R² > 0.6
+    - Buy Asset1, Short Asset2
+    
+    ✅ **ENTER SHORT Spread** when:
+    - Predicted change < -0.6  
+    - Confidence R² > 0.6
+    - Short Asset1, Buy Asset2
+    
+    ⏸️ **HOLD** when:
+    - Signal strength < 0.6
+    - Confidence R² < 0.6
+    
+    **Risk Management:**
+    - Monitor OIH, OXY, CVE for confirmation
+    - Use stop-loss on individual legs
+    - Re-assess daily with new predictions
+    """)
+
 # ----------------- MAIN APP -----------------
 def main():
     st.title("Commodity Spread Predictor")
@@ -129,6 +157,9 @@ def main():
     for f in feature_columns:
         X_input[f] = st.sidebar.number_input(f, value=float(df[f].iloc[-1]), step=1.0)
     X_input = pd.DataFrame([X_input])
+
+    # Add trading strategy guide to sidebar
+    trading_strategy_guide()
 
     # Run prediction
     ensemble_pred, performances, weights, avg_r2 = run_ensemble(df, X_input, target)
@@ -175,6 +206,15 @@ def main():
 
     else:
         st.info("Select a spread and input values to see predictions.")
+
+    # Risk Disclaimer
+    st.markdown("---")
+    st.markdown("""
+    ### ⚠️ Risk Disclaimer
+    *This tool provides algorithmic trading suggestions for educational purposes only. 
+    Past performance does not guarantee future results. Always conduct your own research 
+    and consider consulting with a qualified financial advisor before making investment decisions.*
+    """)
 
 if __name__ == "__main__":
     main()
