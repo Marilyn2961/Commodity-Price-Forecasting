@@ -1,0 +1,38 @@
+# Core Python libraries
+pandas
+numpy
+
+# Machine Learning
+scikit-learn
+lightgbm
+xgboost
+
+# Deep Learning (for LSTM/Transformer, optional)
+torch       # PyTorch 
+
+# Data visualization
+matplotlib
+seaborn
+
+# Model explainability
+shap
+
+# Web framework (for API)
+fastapi
+uvicorn    # ASGI server for FastAPI
+
+# Dashboard
+streamlit
+
+# Experiment tracking
+mlflow
+
+# Data versioning
+dvc
+
+# Utilities
+python-dotenv    # For environment variables 
+tqdm             # For progress bars 
+
+# Jupyter Notebook support (for .ipynb files)
+notebook
