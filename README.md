@@ -1,6 +1,6 @@
 # Commodity Price Forecasting Using Multi-Market Financial Time Series Data
 
-![Commodity Price Forecasting](images/project_banner.png)
+![Commodity Price Forecasting](images/project%20banner.png)
 
 ## Project Overview
 Global commodity markets are influenced by multiple, interconnected factors such as stock indices, futures contracts, and foreign exchange rates. Forecasting commodity returns is a non-trivial task due to high volatility, lagged dependencies, and complex inter-market relationships.
@@ -72,7 +72,7 @@ Conclusion: Using a weighted ensemble ensures higher predictive accuracy, robust
 [Tableau Dashboard](https://public.tableau.com/app/profile/rodgers.otieno/viz/Phase5_17595776062790/Group5DashBoard?publish=yes)
 
 ## Deployed Model
-- We deployed the [weighted ensemble method](https://commodity-price-forecasting.streamlit.app/ as a price forecasting app)
+- We deployed the [weighted ensemble method](https://commodity-price-forecasting.streamlit.app/) as a price forecasting app
 
 ## Conclusion
 This project demonstrates the feasibility of leveraging multi-market time series data for forecasting commodity returns. By integrating lagged effects and advanced ensemble methods, the models achieved meaningful predictive accuracy, offering practical utility for risk management and trading strategy optimization.
