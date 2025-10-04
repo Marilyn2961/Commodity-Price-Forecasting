@@ -1,6 +1,6 @@
 # Commodity Price Forecasting Using Multi-Market Financial Time Series Data
 
-![Commodity Price Forecasting](images/project_banner.png)
+![Commodity Price Forecasting](images/project%20banner.png)
 
 ## Project Overview
 Global commodity markets are influenced by multiple, interconnected factors such as stock indices, futures contracts, and foreign exchange rates. Forecasting commodity returns is a non-trivial task due to high volatility, lagged dependencies, and complex inter-market relationships.
