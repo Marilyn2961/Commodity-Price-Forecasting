@@ -72,7 +72,7 @@ Conclusion: Using a weighted ensemble ensures higher predictive accuracy, robust
 [Tableau Dashboard](https://public.tableau.com/app/profile/rodgers.otieno/viz/Phase5_17595776062790/Group5DashBoard?publish=yes)
 
 ## Deployed Model
-- We deployed the [weighted ensemble method](https://commodity-price-forecasting.streamlit.app/) as a price forecasting app)
+- We deployed the [weighted ensemble method](https://commodity-price-forecasting.streamlit.app/) as a price forecasting app
 
 ## Conclusion
 This project demonstrates the feasibility of leveraging multi-market time series data for forecasting commodity returns. By integrating lagged effects and advanced ensemble methods, the models achieved meaningful predictive accuracy, offering practical utility for risk management and trading strategy optimization.
